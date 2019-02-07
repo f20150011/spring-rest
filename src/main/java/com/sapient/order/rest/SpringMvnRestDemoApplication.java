@@ -20,7 +20,7 @@ public class SpringMvnRestDemoApplication {
 
 	@Bean
 	public DriverManagerDataSource dataSource() {
-		return new DriverManagerDataSource("jdbc:mysql://10.150.222.33:3306/shriram", "root", "root");
+		return new DriverManagerDataSource("jdbc:mysql://{ip}/{schema}", "{user}", "{password}");
 	}
 
 	@Bean
